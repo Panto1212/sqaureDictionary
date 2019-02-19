@@ -1,13 +1,11 @@
-print("Enter an integer")
-x= int(input())
+print("How many keys do you want in your dictionary?")
+n = int(input())
 
-print(x)
-
-y= int(x)*int(x)
-
-print(y)
-
-square = {
-    x : y}
-
+square = {}
+for x in range(n) :
+    print("Integer:")
+    key = int(input())
+    value= int(key)*int(key) 
+    square[key]= value
+   
 print(square)
